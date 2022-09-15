@@ -99,14 +99,14 @@ impl Mul for Fr {
     }
 }
 
-#[derive(Debug)]
+#[derive(Debug, Eq, PartialEq)]
 pub enum FieldError {
     InvalidSliceLength,
     InvalidU512Encoding,
     NotMember,
 }
 
-#[derive(Debug)]
+#[derive(Debug, Eq, PartialEq)]
 pub enum CurveError {
     InvalidEncoding,
     NotMember,
