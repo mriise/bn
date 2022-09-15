@@ -85,7 +85,7 @@ pub struct AffineG<P: GroupParams> {
     y: P::Base,
 }
 
-#[derive(Debug)]
+#[derive(Debug, PartialEq, Eq)]
 pub enum Error {
     NotOnCurve,
     NotInSubgroup,
